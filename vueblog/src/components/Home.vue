@@ -85,6 +85,7 @@
       var _this = this;
       getRequest("/currentUserName").then(function (msg) {
         _this.currentUserName = msg.data;
+        console.log(this.currentUserName+"*-*-*-")
       }, function (msg) {
         _this.currentUserName = '游客';
       });

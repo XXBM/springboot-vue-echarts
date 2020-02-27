@@ -8,6 +8,8 @@ import DataCharts from '@/components/DataCharts'
 import PostArticle from '@/components/PostArticle'
 import UserMana from '@/components/UserMana'
 import BlogDetail from '@/components/BlogDetail'
+import TravelMap from '@/components/TravelMap'
+import ChartsList from '@/components/ChartsList'
 
 Vue.use(Router)
 
@@ -92,10 +94,20 @@ export default new Router({
       iconCls: 'fa fa-bar-chart',
       children: [
         {
-          path: '/charts',
+          path: '/charts1',
           iconCls: 'fa fa-bar-chart',
-          name: '数据统计',
+          name: '数据统计1',
           component: DataCharts
+        },{
+          path: '/charts2',
+          iconCls: 'fa fa-bar-chart',
+          name: '数据统计2',
+          component: ChartsList
+        },{
+          path: '/charts3',
+          iconCls: 'fa fa-bar-chart',
+          name: '数据统计3',
+          component: TravelMap
         }
       ]
     }
